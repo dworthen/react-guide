@@ -29,7 +29,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "docs": "gitbook build ./gitbook ./docs",
+    "docs": "gitbook build ./gitbook && cp ./gitbook/_book/* ./docs -r",
     "docs:serve": "gitbook serve ./gitbook"
   },
   "keywords": [],
