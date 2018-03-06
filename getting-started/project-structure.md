@@ -88,7 +88,13 @@ Add the following devDependencies and build script to `package.json`.
 }
 ```
 
-Don't forget to run `$ npm install` to download all the dependencies.
+The dependencies can be grouped into three primary tools. 
+
+1. **React**: Packages that provide React functionality and dependencies for building React applications.
+2. **Babel**: The tool used to transpile ES2015 and JSX (part of React, as we will see) to the more widely supported ES5.
+3. **Webpack**: The module bundler. Webpack will bundle modules and, through plugins with Babel, transpile the source code to ES5 during the bundling process. 
+
+The `scripts.build` command added to package.json will allow us to run `$ npm run build` in the terminal which, in turn, will run webpack. 
 
 ## Webpack.config.js
 

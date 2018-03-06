@@ -315,7 +315,13 @@ $ npm init -y
   <span class="hljs-string">&quot;license&quot;</span>: <span class="hljs-string">&quot;ISC&quot;</span>
 }
 </code></pre>
-<p>Don&apos;t forget to run <code>$ npm install</code> to download all the dependencies.</p>
+<p>The dependencies can be grouped into three primary tools. </p>
+<ol>
+<li><strong>React</strong>: Packages that provide React functionality and dependencies for building React applications.</li>
+<li><strong>Babel</strong>: The tool used to transpile ES2015 and JSX (part of React, as we will see) to the more widely supported ES5.</li>
+<li><strong>Webpack</strong>: The module bundler. Webpack will bundle modules and, through plugins with Babel, transpile the source code to ES5 during the bundling process. </li>
+</ol>
+<p>The <code>scripts.build</code> command added to package.json will allow us to run <code>$ npm run build</code> in the terminal which, in turn, will run webpack. </p>
 <h2 id="webpackconfigjs"><a name="webpackconfigjs" class="plugin-anchor" href="#webpackconfigjs"><i class="fa fa-link" aria-hidden="true"></i></a>Webpack.config.js</h2>
 <hr>
 <p>Covered in the <a href="../build.md">next section</a>.</p>
@@ -362,7 +368,7 @@ $ npm init -y
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Project Structure","level":"1.4.2","depth":2,"next":{"title":"Build","level":"1.4.3","depth":2,"path":"getting-started/build.md","ref":"getting-started/build.md","articles":[]},"previous":{"title":"Environment","level":"1.4.1","depth":2,"path":"getting-started/environment.md","ref":"getting-started/environment.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors"],"pluginsConfig":{"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"getting-started/project-structure.md","mtime":"2018-03-03T22:54:31.249Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-03T23:00:25.985Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Project Structure","level":"1.4.2","depth":2,"next":{"title":"Build","level":"1.4.3","depth":2,"path":"getting-started/build.md","ref":"getting-started/build.md","articles":[]},"previous":{"title":"Environment","level":"1.4.1","depth":2,"path":"getting-started/environment.md","ref":"getting-started/environment.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors"],"pluginsConfig":{"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"getting-started/project-structure.md","mtime":"2018-03-06T02:18:29.157Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-06T02:40:02.979Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
